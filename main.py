@@ -6,11 +6,12 @@ import os
 
 if __name__ == '__main__':
     dataset = gpd.read_file('data.geojson')
-    os.mkdir('output')
+    output_path = Config.FILE_PATH
+    os.mkdir(output_path)
     for i, row in dataset.iterrows():
         name = row['name']
         images_scraped = 0
-        folder_name = f'output/class_{name}'
+        folder_name = f'{output_path}/class_{name}'
         os.makedirs(folder_name)
         images_scraped = 0
         while images_scraped < Config.IMAGE_PER_CLASS:
