@@ -1,5 +1,5 @@
 class Config:
-    GOOGLE_API_KEY = 'AIzaSyB68HTw4-bgMhhMd0WpSVwOBNzyZD_pt0U'
+    GOOGLE_API_KEY = '***REMOVED***'
     FILE_PATH = './file_path'
     RADIUS = 15000
     PITCH = 0
